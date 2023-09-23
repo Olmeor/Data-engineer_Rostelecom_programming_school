@@ -58,4 +58,4 @@ with (open('../tv_rating.csv', 'r', encoding='utf-8') as file_in,
     user_id = 0
 
 end = time.time() - start
-print(end)
+print('Done', end)
