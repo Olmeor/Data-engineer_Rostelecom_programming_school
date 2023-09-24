@@ -76,3 +76,14 @@ from (
 	from olejnikov_tv_mv) h
 group by hours
 order by hours
+
+-- дополнительное материализованное представление для распределения по часам
+create materialized view olejnikov_tv_2_mv as
+select hours, count(hours) as count_views
+from (
+	select generate_series(date_part('hour', time_start::time)::int, date_part('hour', time_end::time)::int) as hours
+	from olejnikov_tv_mv) h
+group by hours
+order by hours
+
+select * from olejnikov_tv_2_mv
