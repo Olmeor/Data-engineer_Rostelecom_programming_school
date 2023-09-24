@@ -46,6 +46,7 @@
 ---
 
 [Презентация](https://github.com/Olmeor/Data-engineer_Rostelecom_programming_school/blob/main/%D0%A1ertification/presentation.pptx) - презентация проекта
+[pdf](https://github.com/Olmeor/Data-engineer_Rostelecom_programming_school/blob/main/%D0%A1ertification/presentation.pdf) -  - презентация проекта в формате pdf
 
 ### Генерация датасета
 
@@ -75,4 +76,22 @@ HTML-страница преобразовывается в исходный CSV
 [sql/hive.sql](https://github.com/Olmeor/Data-engineer_Rostelecom_programming_school/blob/main/%D0%A1ertification/sql/hive.sql) - sql-скрипты для создание таблиц Hive для импорта данных из HDFS и запросов для агрегации данных.
 
 ---
+
+### 4. Перенос данных в GreenPlum (RT.Warehouse)
+
+[python/olejnikov_tv_dag.py](https://github.com/Olmeor/Data-engineer_Rostelecom_programming_school/blob/main/%D0%A1ertification/python/olejnikov_tv_dag.py) - ориентированный ациклический граф Airflow DAG для переноса обработанных данных из Hive в Greenplum.
+
+[sql/greenplum.sql](https://github.com/Olmeor/Data-engineer_Rostelecom_programming_school/blob/main/%D0%A1ertification/sql/greenplum.sql) - sql-скрипты для аналитических запросов и создания материализованного представления для последующего использования в Superset. 
+
+---
+
+### 5. Аналитика с использованием Python (Apache Zeppelin + Apache Spark = RT.DataLake)
+
+[python/olejnikov_tv_2JBN33XNC.zpln](https://github.com/Olmeor/Data-engineer_Rostelecom_programming_school/blob/main/%D0%A1ertification/python/olejnikov_tv_2JBN33XNC.zpln) - файл Apache Zeppelin на основе интерпретатора Spark с аналитическими запросами к таблицам Hive и диаграммами.
+
+---
+
+### 6. Визуализация данных с использованием Apache Superset продукт RT DataVision
+
+[Superset_dashboard.jpg](https://github.com/Olmeor/Data-engineer_Rostelecom_programming_school/blob/main/%D0%A1ertification/Superset_dashboard.jpg) - результат визуализация данных.
 
