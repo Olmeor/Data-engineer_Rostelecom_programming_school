@@ -34,19 +34,19 @@
     - популярность различного контента
     - активность пользователей по времени суток и т.д.
 4. Перенос данных в GreenPlum (RT.Warehouse) и / или ClickHouse (RT.WideStore)  
-Настройка процесса ETL на основании Apache Airflow / Nifi продукта RT.Streaming, чтобы перенести обработанные данные из HDFS/Hive в GreenPlum/ClickHouse для сложных аналитических запросов.
+Настройка процесса ETL на основании Apache Airflow продукта RT.Streaming, чтобы перенести обработанные данные из Hive в GreenPlum для сложных аналитических запросов.
 5. Аналитика с использованием Python (Apache Zeppelin + Apache Spark = RT.DataLake)  
 Использование библиотек Python для глубокого анализа данных, выявления инсайтов по данным, прогнозирования поведения пользователей
 6. Визуализация данных с использованием Apache Superset (продукт RT.DataVision)
 Создание интерактивных дашбордов на основе данных из GreenPlum и ClickHouse. Дашборды могут включать в себя графики такие как
     - активности пользователей
-    - тепловые карты популярности шоу и сериалов
+    - рейтинг просмотра каналов
     - гистограммы длительности просмотров
 
 ---
 
 [Презентация](https://github.com/Olmeor/Data-engineer_Rostelecom_programming_school/blob/main/%D0%A1ertification/presentation.pptx) - презентация проекта
-[pdf](https://github.com/Olmeor/Data-engineer_Rostelecom_programming_school/blob/main/%D0%A1ertification/presentation.pdf) -  - презентация проекта в формате pdf
+[pdf](https://github.com/Olmeor/Data-engineer_Rostelecom_programming_school/blob/main/%D0%A1ertification/presentation.pdf) - презентация проекта в формате pdf
 
 ### Генерация датасета
 
@@ -93,5 +93,5 @@ HTML-страница преобразовывается в исходный CSV
 
 ### 6. Визуализация данных с использованием Apache Superset продукт RT DataVision
 
-[Superset_dashboard.jpg](https://github.com/Olmeor/Data-engineer_Rostelecom_programming_school/blob/main/%D0%A1ertification/Superset_dashboard.jpg) - результат визуализация данных.
+[Superset_dashboard.jpg](https://github.com/Olmeor/Data-engineer_Rostelecom_programming_school/blob/main/%D0%A1ertification/Superset_dashboard.jpg) - результат визуализации данных.
 
