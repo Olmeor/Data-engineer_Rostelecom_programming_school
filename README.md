@@ -93,5 +93,7 @@ HTML-страница преобразовывается в исходный CSV
 
 ### 6. Визуализация данных с использованием Apache Superset продукт RT DataVision
 
-[Superset_dashboard.jpg](https://github.com/Olmeor/Data-engineer_Rostelecom_programming_school/blob/main/%D0%A1ertification/Superset_dashboard.jpg) - результат визуализации данных.
+[dashboard/Superset_dashboard.jpg](https://github.com/Olmeor/Data-engineer_Rostelecom_programming_school/blob/main/%D0%A1ertification/dashboard/Superset_dashboard.jpg) - результат визуализации данных.
+
+[dashboard](https://github.com/Olmeor/Data-engineer_Rostelecom_programming_school/blob/main/%D0%A1ertification/dashboard/dashboard_export_20230927T091411.zip) - экспортированные результаты визуализации.
 
