@@ -45,7 +45,7 @@
 
 ---
 
-[Презентация](https://github.com/Olmeor/Data-engineer_Rostelecom_programming_school/blob/main/%D0%A1ertification/presentation.pptx) - презентация проекта
+[Презентация](https://github.com/Olmeor/Data-engineer_Rostelecom_programming_school/blob/main/%D0%A1ertification/presentation.pptx) - презентация проекта powerpoint  
 [pdf](https://github.com/Olmeor/Data-engineer_Rostelecom_programming_school/blob/main/%D0%A1ertification/presentation.pdf) - презентация проекта в формате pdf
 
 ### Генерация датасета
@@ -95,5 +95,5 @@ HTML-страница преобразовывается в исходный CSV
 
 [dashboard/Superset_dashboard.jpg](https://github.com/Olmeor/Data-engineer_Rostelecom_programming_school/blob/main/%D0%A1ertification/dashboard/Superset_dashboard.jpg) - результат визуализации данных.
 
-[dashboard](https://github.com/Olmeor/Data-engineer_Rostelecom_programming_school/blob/main/%D0%A1ertification/dashboard/dashboard_export_20230927T091411.zip) - экспортированные результаты визуализации.
+[dashboard/dashboard_export](https://github.com/Olmeor/Data-engineer_Rostelecom_programming_school/blob/main/%D0%A1ertification/dashboard/dashboard_export_20230927T091411.zip) - экспортированные результаты визуализации.
 
