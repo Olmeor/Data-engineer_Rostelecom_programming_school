@@ -46,8 +46,10 @@
 ---
 
 [Презентация](https://github.com/Olmeor/Data-engineer_Rostelecom_programming_school/blob/main/%D0%A1ertification/presentation.pptx) - презентация проекта powerpoint  
+
 [pdf](https://github.com/Olmeor/Data-engineer_Rostelecom_programming_school/blob/main/%D0%A1ertification/presentation.pdf) - презентация проекта в формате pdf
 
+[Доклад](https://github.com/Olmeor/Data-engineer_Rostelecom_programming_school/blob/main/%D0%A1ertification/%D0%94%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4.docx) - доклад по проекту
 ### Генерация датасета
 
 Генерация датасета на основе статистики кабельного канала https://www.powernet.com.ru/channels-stat  
