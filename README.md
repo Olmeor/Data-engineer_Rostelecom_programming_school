@@ -43,6 +43,14 @@
     - рейтинг просмотра каналов
     - гистограммы длительности просмотров
 
+**Расширенная часть:**
+
+1. Реализовать долгосрочное хранение в формате AVRO
+2. Задействовать больше компонентов кластера:
+    - Реализовать долгосрочное хранение датасета в AVRO-формате.
+    - Реализовать стриминг так, чтоб данные одновременно попадали на HDFS и ClickHouse.
+    - Реализовать загрузку датасета непосредственно из HDFS в Hive, Spark, GreenPlum.
+
 ---
 
 [Презентация](https://github.com/Olmeor/Data-engineer_Rostelecom_programming_school/blob/main/%D0%A1ertification/presentation.pptx) - презентация проекта powerpoint  
@@ -50,6 +58,9 @@
 [pdf](https://github.com/Olmeor/Data-engineer_Rostelecom_programming_school/blob/main/%D0%A1ertification/presentation.pdf) - презентация проекта в формате pdf
 
 [Доклад](https://github.com/Olmeor/Data-engineer_Rostelecom_programming_school/blob/main/%D0%A1ertification/%D0%94%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4.docx) - доклад по проекту
+
+---
+
 ### Генерация датасета
 
 Генерация датасета на основе статистики кабельного канала https://www.powernet.com.ru/channels-stat  
@@ -57,13 +68,13 @@ HTML-страница преобразовывается в исходный CSV
 
 [python/make_tv_dataset_csv.py](https://github.com/Olmeor/Data-engineer_Rostelecom_programming_school/blob/main/%D0%A1ertification/python/make_tv_dataset_csv.py) - скрипт, генерирующий датасет на основании исходного файла. Датасет разделен на три таблицы согласно третьей нормальной формы. Генерация идет для 10000 пользователей в течении 7 предыдущих суток.
 
-[dataset](https://github.com/Olmeor/Data-engineer_Rostelecom_programming_school/tree/main/%D0%A1ertification/dataset) - папка с полученным датасетом (в т.ч. с будущим стримом из п. 2)
+[dataset](https://github.com/Olmeor/Data-engineer_Rostelecom_programming_school/tree/main/%D0%A1ertification/dataset) - папка с полученным датасетом (в т.ч. с будущим стримом из п. 2 и AVRO-файлами из расширенной части задания)
 
 ---
 
 ### 1. Сбор данных с использованием RT.Streaming
 
-[python/tx_kafka_json.py](https://github.com/Olmeor/Data-engineer_Rostelecom_programming_school/blob/main/%D0%A1ertification/python/tx_kafka_json.py) - продюсер на Python, который симулирует данные о поведении пользователей интерактивного телевидения.
+[python/tx_kafka_json.py](https://github.com/Olmeor/Data-engineer_Rostelecom_programming_school/blob/main/%D0%A1ertification/python/tx_kafka_json.py) - продюсер на Python, который симулирует данные о поведении пользователей интерактивного телевидения
 
 ---
 
@@ -99,3 +110,18 @@ HTML-страница преобразовывается в исходный CSV
 
 [dashboard/dashboard_export](https://github.com/Olmeor/Data-engineer_Rostelecom_programming_school/blob/main/%D0%A1ertification/dashboard/dashboard_export_20230927T091411.zip) - экспортированные результаты визуализации.
 
+---
+
+### Расширенное задание:
+
+[python/convert_csv_to_avro.py](https://github.com/Olmeor/Data-engineer_Rostelecom_programming_school/blob/main/%D0%A1ertification/python/convert_csv_to_avro.py) - конвертер CSV -> AVRO
+
+[python/tx_kafka_json_ch.py](https://github.com/Olmeor/Data-engineer_Rostelecom_programming_school/blob/main/%D0%A1ertification/python/tx_kafka_json_ch.py) - продюсер со второй очередью для ClickHouse
+
+[python/rx_kafka_json_to_csv_and_avro.py](https://github.com/Olmeor/Data-engineer_Rostelecom_programming_school/blob/main/%D0%A1ertification/python/rx_kafka_json_to_csv_and_avro.py) - потребитель с возможностью записи одновременно в CSV и AVRO
+
+[sql/tv_kafka_click.sql](https://github.com/Olmeor/Data-engineer_Rostelecom_programming_school/blob/main/%D0%A1ertification/sql/tv_kafka_click.sql) - sql-скрипт для обработки стрима из топика Kafka
+
+[sql/hive_avro.sql](https://github.com/Olmeor/Data-engineer_Rostelecom_programming_school/blob/main/%D0%A1ertification/sql/hive_avro.sql) - sql-скрипты для создание таблиц Hive для импорта AVRO-данных из HDFS
+
+[sql/greenplum_avro.sql](https://github.com/Olmeor/Data-engineer_Rostelecom_programming_school/blob/main/%D0%A1ertification/sql/greenplum_avro.sql) - sql-скрипты для создание таблиц GreenPlum для импорта AVRO-данных из HDFS
