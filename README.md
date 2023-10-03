@@ -59,6 +59,8 @@
 
 [Доклад](https://github.com/Olmeor/Data-engineer_Rostelecom_programming_school/blob/main/%D0%A1ertification/%D0%94%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4.docx) - доклад по проекту
 
+[Схемы](https://github.com/Olmeor/Data-engineer_Rostelecom_programming_school/tree/main/%D0%A1ertification/schemes) - архитектура проекта (основная и расширенная) 
+
 ---
 
 ### Генерация датасета
